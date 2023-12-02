@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+<!-- HEAD -->
+{% block head %}
+<title>Generated Image</title>
+{% endblock %}
+
+<!-- BODY -->
+{% block body %}
+    <h1>Generated Image</h1>
+
+    {% if generated_image != "" %}
+        <img 
+        src="{{ generated_image }}"
+            alt="Generated Image"
+        >
+    {% else %}
+        <p>Aucune image générée pour le moment.</p>
+    {% endif %}
+
+    <p><a href="{{ url_for('index') }}">Retour à la page d'accueil</a></p>
+{% endblock %}
