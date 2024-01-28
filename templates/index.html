@@ -6,6 +6,13 @@
 
 <!-- BODY -->
 {% block body %}
-    <h1>GAN Image Generation</h1>
-    <p><a href="{{ url_for('generate') }}">Generate Image</a></p>
+    <div class="index_content">
+        <h1 class="title">Bienvenue sur Light Generator !</h1>
+        <p>
+            Générer des portraits inexistants grâce à notre nouveau modèle de GAN !
+        </p>
+        <a class="btn-secondary" href="{{ url_for('generate') }}">
+            Tester le GAN
+        </a>
+    </div>
 {% endblock %}
